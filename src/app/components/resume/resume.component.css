@@ -120,7 +120,7 @@ ul {
 }
 /* About ------------------------------------------------------------------------------------- */
 .about-content {
-  top: 25.5vh;
+  top: 25vh;
 }
 .main-title {
   line-height: 6rem;
@@ -239,27 +239,28 @@ ul {
 /* Responsive Design Media Queries ---------------------------------- */
 @media screen and (min-width: 800px) and (min-height: 945px) {
   .about-content { top: 32vh; }
-  .education-content { top: 32vh; }
-  .skills-content { top: 32vh; }
-  .interests-content { top: 32vh; }
-  .awards-content { top: 32vh; }
+  .education-content { top: 30vh; }
+  .skills-content { top: 30vh; }
+  .interests-content { top: 30vh; }
+  .awards-content { top: 30vh; }
 }
 @media screen and (min-width: 800px) and (min-height: 901px) and (max-height: 944px) {
   .about-content { top: 31vh; }
-  .education-content { top: 31vh; }
-  .skills-content { top: 31vh; }
-  .interests-content { top: 31vh; }
-  .awards-content { top: 31vh; }
+  .education-content { top: 30vh; }
+  .skills-content { top: 30vh; }
+  .interests-content { top: 30vh; }
+  .awards-content { top: 30vh; }
 }
 @media screen and (min-width: 800px) and (min-height: 780px) and (max-height: 900px) {
   .about-content { top: 28vh; }
-  .education-content { top: 28vh; }
-  .skills-content { top: 28vh; }
-  .interests-content { top: 28vh; }
-  .awards-content { top: 28vh; }
+  .education-content { top: 26.5vh; }
+  .skills-content { top: 26.5vh; }
+  .interests-content { top: 26.5vh; }
+  .awards-content { top: 26.5vh; }
 }
 @media screen and (max-width: 1300px) {
   .rounded-img { max-width: 7rem; max-height: 7rem; border-width: .25rem; }
+  .about-content { top: 22vh; }
   .education-content { top: 10vh; }
   .skills-content { top: 20vh; }
   .interests-content { top: 20vh; }
@@ -369,32 +370,37 @@ ul {
 @media screen and (min-width: 650px) and (max-width: 768px) {
   .text-logo { left: 41%; }
 }
-/* Large Mobile */
+
+/* Large Smartphone (Vertical) */
 @media screen and (max-width: 600px) {
-  .align {
-    text-align: left !important;
-  }
+  .about-content { top: 15vh; }
+  .align { text-align: left !important; }
   /* Experience ---------------------------------------------- */
-  .item-wrapper {
-    display: block;
-    margin-bottom: 5vh;
-  }
-  .item {
-    width: 100%;
-  }
-  .item-right {
-    width: 100%;
-  }
+  .item-wrapper { display: block; margin-bottom: 5vh; }
+  .item { width: 100%; }
+  .item-subtitle { font-size: 1.7rem; }
+  .item-right { width: 100%; }
   /* Awards ------------------------------------------------- */
-  .line-height {
-    line-height: 4rem;
-    margin-bottom: 1vh;
-  }
+  .line-height { line-height: 4rem; margin-bottom: 5vh; }
+  .small-text { font-size: 1.1rem; }
 }
+
+/* Large Smartphone (Horizontal) */
+@media screen and (max-width: 850px) and (max-height: 500px) {
+  .about-content { top: 10vh; }
+  .align { text-align: left !important; }
+  .item-wrapper { display: block; margin-bottom: 5vh; }
+  .item { width: 100%; }
+  .item-subtitle { font-size: 1.7rem; }
+  .item-right { width: 100%; }
+  .main { font-size: 1.15rem; }
+}
+
 /* iPhone X */
 @media screen and (max-width: 375px) and (min-height: 700px) {
   .small-text { font-size: .9rem; }
 }
+
 /* iPhone 6/7/8 */
 @media screen and (max-width: 375px) and (max-height: 699px) {
   .about-content { top: 10vh; }
