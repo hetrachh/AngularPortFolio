@@ -4,7 +4,7 @@
   <!-- Home Section -------------------------------------------------------------->
   <section id="home">
     <!-- Video Background -->
-    <video loop autoplay muted id="video-background">
+    <video loop autoplay muted id="video-background" oncanplay="this.play()" onloadedmetadata="this.muted = true">
       <source src="../assets/img/video-background.mp4" type="video/mp4" />
     </video>
     <div class="video-overlay"></div>
@@ -29,7 +29,7 @@
         <img src="../assets/img/me.jpg" alt="Picture of Me" class="about-img">
         <div class="card-body">
           <h1 class="card-title">About</h1>
-          <p class="card-text">I am currently working as a Software Engineer at CodalSystems Pvt. Ltd. I've created full-stack projects with Laravel, JSP & Servlets , Wordpress, and databases with SQL. I've also created Mobile Application using Android Platform. I have a strong foundation in design, gaming, and music that influences my work. I am very good at solving problems and I look forward to future challenges and expanding my knowledge and skills.</p>
+          <p class="card-text">I am currently working as a Software Engineer at Codal System Pvt. Ltd. I've created full-stack projects with Laravel, JSP & Servlets , Wordpress, and databases with SQL. I've also created Mobile Application using Android Platform. I have a strong foundation in design, gaming, and music that influences my work. I am very good at solving problems and I look forward to future challenges and expanding my knowledge and skills.</p>
           <a routerLink="/resume" routerLinkActive="active" (click)="scrollToTop()">
             <div class="card-button">View Resume</div>
           </a>
